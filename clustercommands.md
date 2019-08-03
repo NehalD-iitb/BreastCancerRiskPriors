@@ -1,6 +1,6 @@
 
 
-Submitting jobs 
+# Submitting jobs 
 
 qsub -j y -o  /gpfs/cbica/home/doiphodn/log.txt /gpfs/cbica/home/doiphodn/model/submitScript.sh 1 /cbica/home/doiphodn/model/2.cnn_cluster.py
 
@@ -12,7 +12,7 @@ qsub -j y -o  /gpfs/cbica/home/doiphodn/log.txt -l V100 /gpfs/cbica/home/doiphod
 
 
 
-Quick transfer
+# Quick transfer
 
 pscp "F:\NEHAL\UPENNACADS\SEM1\CISBE537\PROJECT\B3537_2018\B3537_2018\test_data_split1.pkl" HsuTs@cbica-cluster.uphs.upenn.edu:/cbica/home/hsuts/data
 
@@ -23,11 +23,11 @@ pscp HsuTs@cbica-cluster.uphs.upenn.edu:/cbica/home/hsuts/figures/* "C:\Users\Ne
 pscp HsuTs@cbica-cluster.uphs.upenn.edu:/cbica/home/hsuts/model/2.cnn_clusterTest3.py "C:\Users\Nehal\Desktop"
 
 
-Checking disk space
+# Checking disk space
 
 du -a | sort -n -r | head -n 5
 
-Checking jobs waiting
+# Checking jobs waiting
 
 To see if it would be possible to ever run the job, if the cluster was completely empty, enter:
 qalter -w v JOBID
